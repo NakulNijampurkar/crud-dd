@@ -5,6 +5,8 @@ full-stack MEAN (MongoDB, Express, Angular, Node.js) application using
 Docker, Docker Compose, GitHub Actions CI/CD, and Nginx reverse proxy on
 an AWS Ubuntu VM.
 
+Deployed Public IP: 13.127.152.253
+
 # Tech Stack
 
 -   MongoDB
@@ -75,23 +77,16 @@ User → Nginx (Port 80) → Frontend Container → Backend Container →
 MongoDB Container
 
 # Screenshots
-
-Add the following screenshots in a folder named `screenshots/`:
-
 1.  CI/CD Pipeline Execution (GitHub Actions)
-2.  Docker Image Build & Push Logs
-3.  Running Containers on VM (`docker ps`)
-4.  Working Application UI in Browser
-5.  Nginx Configuration File
-
-3.  Add inside README like this:
-
-```{=html}
-<!-- -->
-```
-    ![CI/CD Success](screenshots/cicd-success.png)
-    ![Docker Build](screenshots/docker-build.png)
-    ![Application UI](screenshots/app-ui.png)
+   ![image alt](https://github.com/NakulNijampurkar/crud-dd/blob/1b01706da25347a9d3e9da9c0ede42f243ce32df/pipline.png)
+3.  Docker Image Build & Push Logs
+   ![image alt](https://github.com/NakulNijampurkar/crud-dd/blob/1b01706da25347a9d3e9da9c0ede42f243ce32df/logs.png)
+5.  Running Containers on VM 
+   ![image alt](https://github.com/NakulNijampurkar/crud-dd/blob/1b01706da25347a9d3e9da9c0ede42f243ce32df/docker%20ps%20on%20vm.png)
+7.  Working Application UI in Browser
+   ![image alt](https://github.com/NakulNijampurkar/crud-dd/blob/1b01706da25347a9d3e9da9c0ede42f243ce32df/dd%20task%201.png)
+8.  Nginx Configuration File
+   ![image alt](https://github.com/NakulNijampurkar/crud-dd/blob/1b01706da25347a9d3e9da9c0ede42f243ce32df/nginx%20conf.png)
 
 
 

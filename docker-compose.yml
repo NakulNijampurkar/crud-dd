@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+
+  mongo:
+    image: mongo:6
+    container_name: crud-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    build: ./backend
+    container_name: crud-backend
+    ports:
+      - "3000:8080"
+    depends_on:
+      - mongo
+    environment:
+      - DB_HOST=mongo
+    command: node server.js
+
+  frontend:
+    build: ./frontend
+    container_name: crud-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:
